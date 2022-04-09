@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stu1" class="com.shf.sy5.Student">
+        <constructor-arg index="0" value="021321" type="java.lang.Integer"/>
+        <constructor-arg index="1" value="张三" type="java.lang.String"/>
+        <constructor-arg name="birthday" value="2000/11/11" type="java.util.Date"/>
+    </bean>
+
+    <bean id="stu2" class="com.shf.sy5.Student">
+        <property name="sno" value="0213333"/>
+        <property name="sname" value="李四"/>
+        <property name="birthday" value="2000/2/2"/>
+    </bean>
+</beans>
